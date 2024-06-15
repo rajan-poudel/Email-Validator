@@ -8,7 +8,7 @@ app = Flask(__name__)
 def home():
     if (request.method=='POST'):
         email = request.form.get('username')
-        url = """https://api.emailvalidation.io/v1/info?apikey=ema_live_DZSD4gt6BF34G60SlP1lBrLQGa6wt9RDCQo5EwrV&email="""+email
+        url = """ """+email
         res = requests.get(url)
         result = res.json()
         dynamic_content = ''
